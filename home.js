@@ -38,7 +38,6 @@ function main_menu() {
 function lunch_menu() {    
     hideAllExcept(menuElements,'div.lunch');
     trackActiveElement('#lunch_btn');
-
 }
 
 function drinks_menu() {

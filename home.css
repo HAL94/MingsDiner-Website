@@ -181,6 +181,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
 .section_menu__nav > ul > li.active > a::after {
