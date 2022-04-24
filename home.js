@@ -68,6 +68,24 @@ $('document').ready(function() {
                 return;
 
         }
-    })
+    });
+
+    
     
 })
+
+let scrollTopBtn = document.getElementById("scroll_to_top_btn");
+
+window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+function scrollTopFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
